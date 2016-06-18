@@ -18,6 +18,7 @@
 		32B02A2E1D150184001F3B43 /* hamster.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32B02A2D1D150184001F3B43 /* hamster.jpg */; };
 		32B02A321D1525D9001F3B43 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B02A311D1525D9001F3B43 /* TextField.swift */; };
 		32B02A341D1526F5001F3B43 /* TemplateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B02A331D1526F5001F3B43 /* TemplateViewController.swift */; };
+		32B02A3F1D153BCE001F3B43 /* XMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B02A3E1D153BCE001F3B43 /* XMLDictionary.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,9 @@
 		32B02A2D1D150184001F3B43 /* hamster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hamster.jpg; sourceTree = "<group>"; };
 		32B02A311D1525D9001F3B43 /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		32B02A331D1526F5001F3B43 /* TemplateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateViewController.swift; sourceTree = "<group>"; };
+		32B02A3C1D153BCD001F3B43 /* House News-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "House News-Bridging-Header.h"; sourceTree = "<group>"; };
+		32B02A3D1D153BCE001F3B43 /* XMLDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLDictionary.h; path = "House News/XMLDictionary.h"; sourceTree = "<group>"; };
+		32B02A3E1D153BCE001F3B43 /* XMLDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLDictionary.m; path = "House News/XMLDictionary.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,10 +89,13 @@
 		32B029F01D14F829001F3B43 = {
 			isa = PBXGroup;
 			children = (
+				32B02A3D1D153BCE001F3B43 /* XMLDictionary.h */,
+				32B02A3E1D153BCE001F3B43 /* XMLDictionary.m */,
 				32B029FB1D14F829001F3B43 /* House News */,
 				32B02A101D14F829001F3B43 /* House NewsTests */,
 				32B02A1B1D14F829001F3B43 /* House NewsUITests */,
 				32B029FA1D14F829001F3B43 /* Products */,
+				32B02A3C1D153BCD001F3B43 /* House News-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,7 +116,6 @@
 				32B02A2D1D150184001F3B43 /* hamster.jpg */,
 				32B02A2A1D14F9CC001F3B43 /* ViewControllers */,
 				32B029FC1D14F829001F3B43 /* AppDelegate.swift */,
-				32B029FE1D14F829001F3B43 /* ViewController.swift */,
 				32B02A001D14F829001F3B43 /* Main.storyboard */,
 				32B02A031D14F829001F3B43 /* Assets.xcassets */,
 				32B02A051D14F829001F3B43 /* LaunchScreen.storyboard */,
@@ -141,6 +147,7 @@
 			children = (
 				32B02A2B1D14FA0D001F3B43 /* MainViewController.swift */,
 				32B02A331D1526F5001F3B43 /* TemplateViewController.swift */,
+				32B029FE1D14F829001F3B43 /* ViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -290,6 +297,7 @@
 				32B029FF1D14F829001F3B43 /* ViewController.swift in Sources */,
 				32B029FD1D14F829001F3B43 /* AppDelegate.swift in Sources */,
 				32B02A321D1525D9001F3B43 /* TextField.swift in Sources */,
+				32B02A3F1D153BCE001F3B43 /* XMLDictionary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +440,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "House News/Info.plist";
@@ -439,6 +448,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "JosephMin.House-News";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "House News-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -447,6 +458,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "House News/Info.plist";
@@ -454,6 +466,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "JosephMin.House-News";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "House News-Bridging-Header.h";
 			};
 			name = Release;
 		};
